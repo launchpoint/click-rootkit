@@ -18,6 +18,7 @@ foreach($dirs as $gpath)
   
   $script[] = "cd $dir";
   $script[] = "git commit -a -m 'Quick commit'";
+  $script[] = "git push";
 }
 
 // search for missing gits
