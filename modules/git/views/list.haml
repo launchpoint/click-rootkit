@@ -8,3 +8,15 @@
           -foreach($v as $line)
             %tr
               %td +$line
+      %td
+        =button_to('quick commit', commit_git_url(array('path'=>$k)))
+%h1 Missing
+%table
+  -foreach($missing as $fpath)
+    %tr
+      %td +$fpath
+      %td =button_to('add', create_git_url(array('path'=>$fpath)))
+
+%h1 Script
+%textarea
+  +join("\n", $script)
