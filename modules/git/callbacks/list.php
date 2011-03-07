@@ -35,5 +35,5 @@ foreach(glob(GLOBAL_MODULES_FPATH."/*") as $fpath)
   $script[] = "git add .";
   $script[] = "git commit -m 'Initial commit'";
   $script[] = "git remote add origin git@github.com:launchpoint/{$repo}.git";
-  $scriot[] = "git push origin master";
+  $script[] = "git push origin master";
 }
